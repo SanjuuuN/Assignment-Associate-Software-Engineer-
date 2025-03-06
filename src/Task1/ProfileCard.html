@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        .profile-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 350px;
+            overflow: hidden;
+            position: relative;
+        }
+        .profile-card .header {
+            background: #0073e6;
+            height: 100px;
+        }
+        .profile-card img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 4px solid white;
+            object-fit: cover;
+            position: absolute;
+            top: 50px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .profile-card .content {
+            padding: 60px 20px 20px;
+        }
+        .profile-card h2 {
+            font-size: 22px;
+            color: #333;
+        }
+        .profile-card .designation {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 10px;
+        }
+        .profile-card .bio {
+            color: #777;
+            font-size: 14px;
+            line-height: 1.5;
+            margin: 10px 15px;
+            text-align: center;
+        }
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 15px;
+        }
+        .social-icons a {
+            text-decoration: none;
+            color: #555;
+            font-size: 20px;
+            transition: color 0.3s, transform 0.3s;
+        }
+        .social-icons a:hover {
+            color: #0073e6;
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-card">
+        <div class="header"></div>
+        <img src="profile.jpg" alt="Profile Picture">
+
+
+
+        <div class="content">
+            <h2>Sanjivani Gulve</h2>
+            <p class="designation">Software Developer</p>
+            <p class="bio">Expert in Java, Spring Boot, Hibernate & React. Passionate about scalable backend solutions, RESTful APIs & high-performance coding.</p>
+            <div class="social-icons">
+                <a href="https://github.com/SanjuuuN" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/sanjivanigulve/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.hackerrank.com/profile/gulvesanjivani" target="_blank"><i class="fa-brands fa-hackerrank"></i></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
